@@ -3,32 +3,68 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Егор — Веб-разработчик</title>
+  <meta name="description" content="Егор Волосач — Веб-разработчик. Frontend, адаптивная верстка, HTML/CSS/JavaScript" />
+  <meta name="keywords" content="веб-разработчик, frontend, html, css, javascript, адаптивная верстка" />
+  <meta property="og:title" content="Егор Волосач — Веб-разработчик" />
+  <meta property="og:description" content="Разрабатываю быстрые, читаемые и поддерживаемые интерфейсы" />
+  <meta property="og:type" content="website" />
+  <title>Егор Волосач — Веб-разработчик</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <button class="theme-toggle" aria-label="Переключить тему" title="Переключить тему">
+    <span class="theme-toggle__icon"></span>
+  </button>
+
   <div class="page">
     <header class="hero">
       <div class="hero__card">
         <div class="hero__top">
-         <div class="avatar" aria-hidden="true"></div>
+          <div class="avatar" aria-hidden="true">
+            <div class="avatar__ring"></div>
+          </div>
 
           <div class="hero__info">
-            <h1 class="hero__name">Волосач Егор Александрович</h1>
+            <h1 class="hero__name">
+              <span class="gradient-text">Волосач Егор Александрович</span>
+            </h1>
             <p class="hero__headline">Веб-разработчик • Frontend • Адаптивная верстка</p>
 
             <div class="contact">
-              <a class="chip" href="mailto:egorvolosac850@gmail.com">Email</a>
-              <a class="chip" href="tel:+375445003882">Телефон</a>
-              <span class="chip chip--muted">Борисов</span>
-              <a class="chip" href="https://github.com/egorvolisac850-arch" target="_blank" rel="noopener">GitHub</a>
+              <a class="chip" href="mailto:egorvolosac850@gmail.com">
+                <svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Email
+              </a>
+              <a class="chip" href="tel:+375445003882">
+                <svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Телефон
+              </a>
+              <span class="chip chip--muted">
+                <svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Борисов
+              </span>
+              <a class="chip" href="https://github.com/egorvolisac850-arch" target="_blank" rel="noopener">
+                <svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-4.646 0-1.029.377-1.897.997-2.571-.099-.243-.431-1.22-.943-1.468.775-.006 1.605.075 1.605.075.551-2.212 2.212-2.212 2.212-2.212 1.232 0 1.839 1.254 1.839 1.254.533-.918 1.444-1.444 2.444-1.444 1.001 0 1.912.526 2.444 1.444 0 0 1.001-1.254 1.839-1.254 0 0 1.661 0 2.212 2.212 0 0 1.054-.081 1.605-.075-.512.248-.844 1.225-.943 1.468.62.674.997 1.542.997 2.571 0 3.312-2.802 4.341-5.467 4.646.429.37.818 1.103.818 2.218v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub
+              </a>
             </div>
           </div>
         </div>
 
         <section class="section section--wide">
-          <h2 class="section__title">Коротко обо мне</h2>
+          <h2 class="section__title">🎯 Коротко обо мне</h2>
           <p class="section__text">
             Разрабатываю быстрые, читаемые и поддерживаемые интерфейсы.
             Умею переносить макеты в чистый HTML/CSS, улучшать UX и доступность,
@@ -37,15 +73,15 @@
 
           <div class="highlights">
             <div class="highlight">
-              <div class="highlight__k">Фокус</div>
+              <div class="highlight__k">✨ Фокус</div>
               <div class="highlight__v">Адаптив, верстка по макетам, качество UI</div>
             </div>
             <div class="highlight">
-              <div class="highlight__k">Инструменты</div>
+              <div class="highlight__k">🛠️ Инструменты</div>
               <div class="highlight__v">HTML • CSS • JavaScript • Node.js • Express</div>
             </div>
             <div class="highlight">
-              <div class="highlight__k">Подход</div>
+              <div class="highlight__k">🎨 Подход</div>
               <div class="highlight__v">Семантика, модульность, единый стиль, оптимизация</div>
             </div>
           </div>
@@ -56,7 +92,7 @@
     <main class="layout">
       <section class="column column--left">
         <section class="section">
-          <h2 class="section__title">Опыт</h2>
+          <h2 class="section__title">💼 Опыт</h2>
 
           <article class="timeline">
             <div class="timeline__top">
@@ -65,28 +101,32 @@
             </div>
             <ul class="list">
               <li class="list__item">
+                <span class="checkmark">✓</span>
                 Реализовываю адаптивные интерфейсы: от структуры и семантики до детальной стилизации.
               </li>
               <li class="list__item">
+                <span class="checkmark">✓</span>
                 Улучшаю UX: навигацию, состояния компонентов, поведение на разных разрешениях.
               </li>
               <li class="list__item">
-                Оптимизирую качество верстки — меньше “ломается” при изменениях и проще поддерживать.
+                <span class="checkmark">✓</span>
+                Оптимизирую качество верстки — меньше "ломается" при изменениях и проще поддерживать.
               </li>
               <li class="list__item">
+                <span class="checkmark">✓</span>
                 Интегрирую UI с данными и дорабатываю взаимодействие с бекендом на уровне логики интерфейса.
               </li>
             </ul>
           </article>
-
         </section>
 
         <section class="section">
-          <h2 class="section__title">Проекты</h2>
+          <h2 class="section__title">🚀 Проекты</h2>
 
           <div class="cards">
             <article class="mini-card">
-		<h3 class="mini-card__title">Адаптивное портфолио (demo)</h3>
+              <div class="mini-card__emoji">📱</div>
+              <h3 class="mini-card__title">Адаптивное портфолио</h3>
               <p class="mini-card__text">
                 Сборка макета в семантичную HTML-структуру, строгая типографика и плавная адаптация под мобильные.
               </p>
@@ -95,11 +135,14 @@
                 <span class="badge">CSS</span>
                 <span class="badge">Responsive</span>
               </div>
-              <a class="mini-card__link" href="#" target="_blank" rel="noopener">Открыть</a>
+              <a class="mini-card__link" href="#" target="_blank" rel="noopener">
+                Открыть →
+              </a>
             </article>
 
             <article class="mini-card">
-              <h3 class="mini-card__title">CRM-lite (demo)</h3>
+              <div class="mini-card__emoji">💼</div>
+              <h3 class="mini-card__title">CRM-lite</h3>
               <p class="mini-card__text">
                 Интерфейс для управления сущностями: фильтрация, карточки, быстрые действия и состояния компонентов.
               </p>
@@ -108,11 +151,14 @@
                 <span class="badge">UI logic</span>
                 <span class="badge">UX</span>
               </div>
-              <a class="mini-card__link" href="#" target="_blank" rel="noopener">Открыть</a>
+              <a class="mini-card__link" href="#" target="_blank" rel="noopener">
+                Открыть →
+              </a>
             </article>
 
             <article class="mini-card">
-              <h3 class="mini-card__title">Сайт услуг (demo)</h3>
+              <div class="mini-card__emoji">🌐</div>
+              <h3 class="mini-card__title">Сайт услуг</h3>
               <p class="mini-card__text">
                 Блоки услуг, страница услуг, аккуратные CTA и верстка, которая одинаково хорошо выглядит везде.
               </p>
@@ -121,7 +167,9 @@
                 <span class="badge">CSS</span>
                 <span class="badge">Accessibility</span>
               </div>
-              <a class="mini-card__link" href="#" target="_blank" rel="noopener">Открыть</a>
+              <a class="mini-card__link" href="#" target="_blank" rel="noopener">
+                Открыть →
+              </a>
             </article>
           </div>
         </section>
@@ -129,51 +177,185 @@
 
       <aside class="column column--right">
         <section class="section section--sticky">
-          <h2 class="section__title">Навыки</h2>
+          <h2 class="section__title">📊 Навыки</h2>
+          <div class="skills">
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">HTML5</span>
+                <span class="skill__value">95%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__progress" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">CSS3</span>
+                <span class="skill__value">90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__progress" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">JavaScript</span>
+                <span class="skill__value">75%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__progress" data-progress="75"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Адаптивная верстка</span>
+                <span class="skill__value">92%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__progress" data-progress="92"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Node.js</span>
+                <span class="skill__value">65%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__progress" data-progress="65"></div>
+              </div>
+            </div>
+          </div>
+          
           <div class="tags" role="list" aria-label="Навыки">
-            <span class="tag" role="listitem">HTML5</span>
-            <span class="tag" role="listitem">CSS3</span>
-            <span class="tag" role="listitem">Адаптивная верстка</span>
+            <span class="tag" role="listitem">Flexbox</span>
+            <span class="tag" role="listitem">Grid</span>
             <span class="tag" role="listitem">Семантика</span>
-            <span class="tag" role="listitem">Flexbox / Grid</span>
-            <span class="tag" role="listitem">Доступность (a11y)</span>
-            <span class="tag" role="listitem">JavaScript</span>
-            <span class="tag" role="listitem">Node.js</span>
+            <span class="tag" role="listitem">a11y</span>
             <span class="tag" role="listitem">Express</span>
+            <span class="tag" role="listitem">Git</span>
           </div>
         </section>
 
         <section class="section">
-          <h2 class="section__title">Образование</h2>
-          <p class="section__text">
-            Студент Полоцкого Государственного университета 1-й курс 25-ИТ.
-            Углубляю практику в веб-разработке и интерфейсах.
-          </p>
+          <h2 class="section__title">🎓 Образование</h2>
+          <div class="education">
+            <div class="education__icon"></div>
+            <div class="education__content">
+              <div class="education__title">Полоцкий Государственный университет</div>
+              <div class="education__meta">1-й курс • 25-ИТ • 2025 — настоящее время</div>
+              <p class="education__text">
+                Углубляю практику в веб-разработке и интерфейсах
+              </p>
+            </div>
+          </div>
         </section>
 
         <section class="section">
-          <h2 class="section__title">Инструменты</h2>
-          <p class="section__text">
-            Работаю с задачами разработки, структурирую код и поддерживаю единый визуальный стиль.
-          </p>
+          <h2 class="section__title">🛠️ Инструменты</h2>
+          <div class="tools">
+            <div class="tool">
+              <span class="tool__emoji">💻</span>
+              <span class="tool__name">VS Code</span>
+            </div>
+            <div class="tool">
+              <span class="tool__emoji"></span>
+              <span class="tool__name">Figma</span>
+            </div>
+            <div class="tool">
+              <span class="tool__emoji">📦</span>
+              <span class="tool__name">npm</span>
+            </div>
+            <div class="tool">
+              <span class="tool__emoji">🌿</span>
+              <span class="tool__name">Git</span>
+            </div>
+          </div>
         </section>
 
         <section class="section section--cta">
-          <h2 class="section__title">Связаться</h2>
+          <h2 class="section__title">📬 Связаться</h2>
           <p class="section__text">
             Открыт к задачам по верстке, интерфейсам и небольшим веб-проектам.
           </p>
           <div class="cta">
-            <a class="btn btn--primary" href="mailto:egor@example.com">Написать</a>
-            <a class="btn" href="https://github.com/egorvolisac850-arch" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn--primary" href="mailto:egorvolosac850@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Написать
+            </a>
+            <a class="btn" href="https://github.com/egorvolisac850-arch" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-4.646 0-1.029.377-1.897.997-2.571-.099-.243-.431-1.22-.943-1.468.775-.006 1.605.075 1.605.075.551-2.212 2.212-2.212 2.212-2.212 1.232 0 1.839 1.254 1.839 1.254.533-.918 1.444-1.444 2.444-1.444 1.001 0 1.912.526 2.444 1.444 0 0 1.001-1.254 1.839-1.254 0 0 1.661 0 2.212 2.212 0 0 1.054-.081 1.605-.075-.512.248-.844 1.225-.943 1.468.62.674.997 1.542.997 2.571 0 3.312-2.802 4.341-5.467 4.646.429.37.818 1.103.818 2.218v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
           </div>
         </section>
       </aside>
     </main>
 
     <footer class="footer">
-      <span class="muted">© Егор • Резюме в HTML + CSS • адаптивная верстка</span>
+      <p class="muted">© 2025 Егор Волосач • Резюме в HTML + CSS • адаптивная верстка</p>
     </footer>
   </div>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.querySelector('.theme-toggle');
+    const themeIcon = themeToggle.querySelector('.theme-toggle__icon');
+    const body = document.body;
+    
+    // Check for saved theme preference
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+      body.classList.add('light-theme');
+      themeIcon.textContent = '☀️';
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-theme');
+      const isLight = body.classList.contains('light-theme');
+      themeIcon.textContent = isLight ? '☀️' : '🌙';
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+    
+    // Animate skill bars on scroll
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progress = entry.target;
+          const value = progress.dataset.progress;
+          progress.style.width = value + '%';
+          progress.classList.add('skill__progress--animated');
+          observer.unobserve(progress);
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.skill__progress').forEach(bar => {
+      observer.observe(bar);
+    });
+    
+    // Smooth scroll animation for sections
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('section--visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.section').forEach(section => {
+      sectionObserver.observe(section);
+    });
+  </script>
 </body>
+</html>
 </html>
